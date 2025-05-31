@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+<section class="about-section" style="background-image: url('{{ url_for('static', filename='assets/images/aboutme.jpg') }}');">
+  <div class="overlay">
+    <h1>About Me</h1>
+    <div class="about-content">
+      <img src="{{ url_for('static', filename='assets/images/me.jpg') }}" alt="Profile Photo">
+      <div class="about-text">
+        <p>Hi, my name is Réka Gábosi. I’m a civil engineer and currently working as a project manager, but I’m also on a journey to become an AI programmer, with a growing interest in cybersecurity.</p>
+
+        <p>I chose civil engineering because I’ve always been drawn to the idea of building something real — something I could walk past years later and know I helped bring to life. There’s a special kind of pride in knowing that your work might stand for decades, maybe even centuries.</p>
+
+        <p>My interest in programming started with a fascination for technology. As AI began advancing rapidly, I found myself wanting to understand how it really works — what’s under the hood — and that curiosity quickly turned into a passion.</p>
+
+        <p>Cybersecurity became a natural extension of that journey. With AI evolving, so do the risks. I want to be part of the effort to protect people from digital threats — and to better protect myself and others from scams, data loss, and misinformation.</p>
+
+        <p>Whether I’m designing a building or writing code, it’s the same mindset — structure, logic, and a drive to build things that last.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

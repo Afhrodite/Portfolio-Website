@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+<section class="intro">
+  <img src="{{ url_for('static', filename='assets/images/me.jpg') }}" alt="Profile Picture" class="profile-pic" loading="lazy">
+  <h1>Réka Gábosi</h1>
+</section>
+
+<section class="socials">
+  <a href="https://www.linkedin.com/in/réka-gábosi-8490b8109" target="_blank">
+    <img src="{{ url_for('static', filename='assets/icons/linkedin.png') }}" alt="LinkedIn Icon"> LinkedIn
+  </a>
+  <a href="https://github.com/Afhrodite" target="_blank">
+    <img src="{{ url_for('static', filename='assets/icons/github.png') }}" alt="GitHub Icon"> GitHub
+  </a>
+</section>
+
+<div class="split-screen">
+  <div class="side programming">
+    <a href="{{ url_for('programming') }}" class="overlay">Programming</a>
+  </div>
+  <div class="side civil">
+    <a href="{{ url_for('civil_engineering') }}" class="overlay">Civil Engineering</a>
+  </div>
+</div>
+
+{% endblock %}

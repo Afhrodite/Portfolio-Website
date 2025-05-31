@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block title %}Programming{% endblock %}
+
+{% block content %}
+
+<section class="programming-section">
+  <div class="programming-container">
+    <h1>Programming Projects</h1>
+    <ul>
+      <div class="project-card">
+        <h3>Digital Home Library</h3>
+        <ul>
+          <p><strong>Tech Stack:</strong> Python, SQLite, Tkinter</p>
+          <p>A desktop app that helps users manage their personal book collection. Features include adding, updating, deleting, and searching for books, as well as tracking reading status and progress—all through a clean graphical interface built with Tkinter.</p>
+
+          <ul class="project-features">
+            <li>Track read/unread status and current page</li>
+            <li>Search by book title or author</li>
+            <li>Persistent storage using SQLite</li>
+            <li>Simple GUI using built-in Tkinter</li>
+            <li>Manually tested through GUI interactions</li>
+          </ul>
+
+          <p><strong>Created as:</strong> Final project for Harvard CS50x, with concepts from CS50 Python and SQL</p>
+
+          <p>
+            <a href="https://github.com/Afhrodite/Digital-Home-Library" target="_blank">GitHub Repository</a> 
+          </p>
+
+          <img src="{{ url_for('static', filename='assets/images/programming_project1.jpg') }}" alt="Digital Home Library Screenshot">
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Quest for Python</h3>
+        <ul>
+          <p><strong>Tech Stack:</strong> Python, SQLite, Tkinter</p>
+          <p>An interactive quiz app designed to help users reinforce Python concepts through customizable multiple-choice questions. Users can add or delete quiz items, and test themselves with instant feedback via a colorful, user-friendly Tkinter interface.</p>
+
+          <ul class="project-features">
+            <li>Create, delete, and manage Python quiz questions</li>
+            <li>Interactive quiz interface with scoring and visual feedback</li>
+            <li>Dynamic question and answer randomization</li>
+            <li>Persistent storage with SQLite</li>
+            <li>Unit tested with pytest and in-memory database</li>
+          </ul>
+
+          <p><strong>Created as:</strong> Final project for Harvard CS50’s Introduction to Programming with Python</p>
+
+          <p>
+            <a href="https://github.com/Afhrodite/Quest-for-Python" target="_blank">GitHub Repository</a>
+          </p>
+
+          <img src="{{ url_for('static', filename='assets/images/programming_project2.jpg') }}" alt="Quest for Python Screenshot">
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <ul>
+          <p><strong>Tech Stack:</strong> Flask, Python, CSS, HTML</p>
+          <p>A personal portfolio website showcasing my background, skills, and projects. The site features a top navigation bar with Home, About Me, Experience, Education, Contact, and Download CV sections, providing a clean, organized user experience.</p>
+
+          <ul class="project-features">
+            <li>Top navigation bar with quick access to all sections</li>
+            <li><strong>Home:</strong> Split-screen intro highlighting programming and civil engineering paths</li>
+            <li><strong>About Me:</strong> Personal bio and background information</li>
+            <li><strong>Experience:</strong> Professional work history with detailed descriptions</li>
+            <li><strong>Education:</strong> University degrees, certifications, and skills</li>
+            <li><strong>Contact:</strong> Email, phone number, LinkedIn, and GitHub links</li>
+            <li><strong>Download CV:</strong> Direct download link for my latest resume</li>
+            <li>Responsive design with modern CSS for smooth user interaction</li>
+            <li>Built with Flask for dynamic content and easy updates</li>
+          </ul>
+
+          <p><strong>Created as:</strong> Personal project to professionally present my skills and experience online</p>
+
+          <p>
+            <a href="https://github.com/Afhrodite/Portfolio-Website" target="_blank">GitHub Repository</a>
+          </p>
+        </ul>
+      </div>
+    </ul>
+
+    <h1>Currently Learning</h1>
+    <ul>
+      <h3>CS50's Introduction to Artificial Intelligence with Python</h3>
+    </ul>
+
+    <h1>Finished Courses</h1>
+    <ul class="programming-certificate-list">
+      <li class="programming-certificate-item">
+        <h3>CS50’s Introduction to Programming with Python</h3>
+        <p><em>Harvard University online course – Issued May 2025</em></p>
+        <p>Learned the fundamentals of Python programming, including functions, conditionals, loops, exceptions, file I/O, unit testing, regular expressions, and object-oriented programming.</p>
+        <p><strong>Credential ID:</strong> c576a00a-4103-48e5-93e2-a9200eb91801</p>
+        <p><a href="https://certificates.cs50.io/c576a00a-4103-48e5-93e2-a9200eb91801.pdf?size=letter" class="verify-link" target="_blank">View Certificate</a></p>
+      </li>
+
+      <li class="programming-certificate-item">
+        <h3>CS50’s Introduction to Computer Science</h3>
+        <p><em>Harvard University online course – Issued Apr 2025</em></p>
+        <p>Gained a broad foundation in computer science by learning problem-solving with Scratch, low-level programming in C, algorithms, memory management, data structures, web development with HTML/CSS/JavaScript, backend development with Flask, SQL databases, and Python.</p>
+        <p><strong>Credential ID:</strong> e51680f3-e753-42a1-ad77-830456a8f2d8</p>
+        <p><a href="https://certificates.cs50.io/e51680f3-e753-42a1-ad77-830456a8f2d8.pdf?size=letter" class="verify-link" target="_blank">View Certificate</a></p>
+      </li>
+
+      <li class="programming-certificate-item">
+        <h3>CS50’s Introduction to Databases with SQL</h3>
+        <p><em>Harvard University online course – Issued Mar 2025</em></p>
+        <p>Learned how to design and query relational databases using SQL, including querying data, managing relationships, designing schemas, writing and viewing data, optimizing performance, and understanding how databases scale.</p>
+        <p><strong>Credential ID:</strong> ea7f8083-66aa-476c-a846-c2ea815eb299</p>
+        <p><a href="https://certificates.cs50.io/ea7f8083-66aa-476c-a846-c2ea815eb299.pdf?size=letter" class="verify-link" target="_blank">View Certificate</a></p>
+      </li>
+
+      <li class="programming-certificate-item">
+        <h3>CS50’s Introduction to Cybersecurity</h3>
+        <p><em>Harvard University online course – Issued Jan 2025</em></p>
+        <p>Explored the fundamentals of cybersecurity, including securing accounts, protecting sensitive data, hardening systems and software, and preserving user privacy through real-world security practices and principles.</p>
+        <p><strong>Credential ID:</strong> 60377481-3fde-4ab7-b52a-9de6bbb9c535</p>
+        <p><a href="https://certificates.cs50.io/60377481-3fde-4ab7-b52a-9de6bbb9c535.pdf?size=letter" class="verify-link" target="_blank">View Certificate</a></p>
+      </li>
+    </ul>
+
+    <h1>Skills</h1>
+    <div class="programming-skills-list">
+      <ul>
+        <li><strong>Programming Languages:</strong> Python, C, JavaScript, SQL, Matlab</li>
+        <li><strong>Web Development:</strong> HTML/CSS, Flask</li>
+        <li><strong>Tools & Technologies:</strong> Git</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

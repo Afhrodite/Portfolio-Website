@@ -1,0 +1,786 @@
+/* -----------------------------------
+   Reset & Base Styles
+----------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* -----------------------------------
+   Navbar Styles
+----------------------------------- */
+nav {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: text-decoration 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------------
+   Intro Section
+----------------------------------- */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 15%; 
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+}
+
+/* -----------------------------------
+   Social Links
+----------------------------------- */
+.socials {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #000;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* -----------------------------------
+   Split Screen Section
+----------------------------------- */
+.split-screen {
+  display: flex;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.side {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+
+.programming {
+  background-image: url('/static/assets/images/programming.jpeg');
+}
+
+.civil {
+  background-image: url('/static/assets/images/civil_engineering.jpeg');
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 5rem;
+  font-weight: bold;
+  background-color: rgba(69, 67, 67, 0.4);
+  color: rgb(174, 224, 225);
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.overlay:visited,
+.overlay:hover,
+.overlay:focus,
+.overlay:active {
+  color: rgb(174, 224, 225);
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+/* -----------------------------------
+   About Section
+----------------------------------- */
+.about-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.about-section .overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 3rem;
+  border-radius: 1rem;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+}
+
+.about-section h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-content img {
+  width: 15%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+  color: #bfecec;
+}
+
+/* -----------------------------------
+   Education Section
+----------------------------------- */
+.education-section {
+  background: url("../assets/images/education.jpg") no-repeat center center fixed;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #383137;
+}
+
+.education-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.education-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #e5c4f1;
+}
+
+.education-content {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.degrees, .certificates {
+  flex: 1 1 400px;
+  background: rgb(228, 227, 227,0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.degrees h2, .certificates h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #0069cc;
+  padding-bottom: 0.5rem;
+}
+
+.degree-item, .certificate-item {
+  margin-bottom: 1.8rem;
+}
+
+.degree-item h3, .certificate-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  color: #014fa8;
+}
+
+.degree-item p, .certificate-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.verify-link {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.verify-link:hover {
+  color: #005a99;
+  text-decoration: underline;
+}
+
+/* Skills and Languages Section */
+.skills-languages {
+  background: rgb(228, 227, 227,0.9);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.skills-languages h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.skill-item {
+  background-color: #0077cc;
+  color: white;
+  border-radius: 30px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-width: 120px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.skill-item i {
+  font-size: 1.2rem;
+}
+
+.skill-item:hover {
+  background-color: #005a99;
+  cursor: default;
+}
+
+.languages-icons {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0264a9;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  user-select: none;
+}
+
+/* -----------------------------------
+   Experience Section
+----------------------------------- */
+.experience-section {
+  background: url("../assets/images/experience.png") no-repeat center center fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  padding: 60px 20px;
+  color: white;
+  min-height: 100vh;
+}
+
+.experience-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #c4eff4;
+}
+
+/* Experience items */
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-item {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.experience-item h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #005a99;
+}
+
+.experience-item h2 span {
+  font-weight: normal;
+  color: #555;
+  font-size: 1rem;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.date-location {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.experience-item p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.experience-item ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.experience-item ul li {
+  margin-bottom: 0.4rem;
+  list-style: disc;
+}
+
+.skills {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #0077cc;
+  background: #bcdff9;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* -----------------------------------
+   Contact Section
+----------------------------------- */
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #a98cbc;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-img {
+  width: 25%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-details {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.contact-details i {
+  margin-right: 0.75rem;
+  color: #333;
+  width: 20px;
+}
+
+.contact-details a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.contact-section .icon {
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: #111010; 
+}
+
+/* -----------------------------------
+   Programming Section Styles
+----------------------------------- */
+
+.programming-section {
+  background-color: #c9e3fd;
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #333;
+}
+
+.programming-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Headings */
+.programming-container h1 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #0077cc;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.programming-container h3 {
+  font-size: 1.5rem;
+  color: #0077cc;
+  margin-bottom: 0.8rem;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.project-card p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.project-features {
+  padding-left: 1.2rem;
+  list-style: disc;
+  margin: 1rem 0;
+}
+
+.project-card a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.project-card img {
+  margin-top: 1.5rem;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Certificate Section */
+.programming-certificate-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  border: 1px solid #ddd; 
+}
+
+.programming-certificate-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.programming-certificate-item h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #0077cc;
+}
+
+.programming-certificate-item p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+.verify-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0077cc;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.verify-link:hover {
+  background-color: #a3cae5;
+}
+
+.programming-skills-list ul {
+  list-style: disc;
+  padding-left: 2.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.programming-skills-list li {
+  margin-bottom: 0.7rem;
+  line-height: 1.7;
+}
+
+/* -----------------------------------
+   Civil Engineering Section Styles
+----------------------------------- */
+.civil-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.civil-container h1 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  border-bottom: 3px solid #2980b9;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.civil-container p {
+  font-size: 1.05rem;
+  color: #555;
+  max-width: 900px;
+  margin-bottom: 35px;
+}
+
+/* Projects Showcase */
+.civil-project-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 50px;
+}
+
+.civil-project {
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.civil-project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.civil-project img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 3px solid #2980b9;
+  transition: transform 0.3s ease;
+}
+
+.civil-project:hover img {
+  transform: scale(1.05);
+}
+
+.civil-project p {
+  padding: 20px 22px;
+  font-size: 1rem;
+  color: #444;
+  flex-grow: 1;
+}
+
+.civil-project p strong {
+  color: #2980b9;
+  font-weight: 700;
+}
+
+/* Education Section */
+.civil-education-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin-bottom: 60px;
+}
+
+.civil-education-item {
+  background: #e9f0f8;
+  border-left: 6px solid #2980b9;
+  padding: 20px 24px;
+  flex: 1 1 30%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease;
+}
+
+.civil-education-item:hover {
+  background: #d2e4f8;
+}
+
+.civil-education-item h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #205072;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.civil-edu-institution {
+  font-weight: 600;
+  color: #31708f;
+  margin-bottom: 6px;
+}
+
+.civil-edu-course {
+  font-style: italic;
+  color: #527a94;
+  margin-bottom: 8px;
+}
+
+.civil-edu-year {
+  color: #739eb6;
+  font-size: 0.9rem;
+}
+
+/* Skills Section */
+.civil-container h3 {
+  color: #205072;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 40px;
+  font-size: 1.6rem;
+}
+
+.civil-container p {
+  max-width: 900px;
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .civil-project-showcase {
+    flex-direction: column;
+  }
+  .civil-project {
+    flex: 1 1 100%;
+  }
+  .civil-education-section {
+    flex-direction: column;
+  }
+  .civil-education-item {
+    flex: 1 1 100%;
+  }
+}
