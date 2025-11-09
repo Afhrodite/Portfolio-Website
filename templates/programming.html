@@ -9,6 +9,35 @@
     <ul>
 
       <div class="project-card">
+        <h3>Concrete Strength Prediction (ML vs AI)</h3>
+        <ul>
+          <p><strong>Tech Stack:</strong> Python, TensorFlow, Keras, Scikit-learn, SQLite, Tkinter</p>
+          <p>
+            A comparative project demonstrating <strong>Machine Learning vs Artificial Intelligence</strong> models in predicting 
+            <em>concrete compressive strength</em> based on material composition.  
+            The application integrates both ML regression models and AI neural networks into an interactive 
+            Tkinter GUI connected to an SQLite database for saving and retrieving test data.
+          </p>
+
+          <ul class="project-features">
+            <li>Interactive Tkinter interface for user input and model selection</li>
+            <li>Built-in database to store and retrieve predictions (SQLite)</li>
+            <li>Includes both ML (Random Forest, XGBoost) and AI (Neural Network) models</li>
+            <li>Displays side-by-side predictions and model performance comparison</li>
+            <li>Visual feedback for user inputs, error handling, and output visualization</li>
+          </ul>
+
+          <p><strong>Created as:</strong> Independent applied project exploring ML vs AI prediction accuracy</p>
+
+          <p>
+            <a href="https://github.com/Afhrodite/Concrete-Strength-Prediction-ML-vs-AI" target="_blank">GitHub Repository</a>
+          </p>
+
+          <img src="{{ url_for('static', filename='assets/images/image6.png') }}" alt="Concrete Strength Prediction App Preview">
+        </ul>
+      </div>
+
+      <div class="project-card">
         <h3>Automated Image Defect Detection with ResNet18</h3>
         <ul>
           <p><strong>Tech Stack:</strong> Python, PyTorch, ResNet18, Matplotlib</p>
@@ -474,4 +503,4 @@
   </div>
 </section>
 
-{% endblock %}
+{% endblock %}}
