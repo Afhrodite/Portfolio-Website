@@ -9,6 +9,41 @@
     <ul>
 
       <div class="project-card">
+        <h3>SafeBubble — Dynamic Safe-Zone Bubble for Wearable RGB+Depth</h3>
+        <ul>
+          <p><strong>Tech Stack:</strong> Python, OpenCV, NumPy, Pandas, YOLOv8 (Ultralytics), Intel RealSense</p>
+          <p>
+            <strong>SafeBubble</strong> is a real-time <em>depth-aware perception system</em> developed for the 
+            <strong>dotLumen Interview Challenge</strong>. It detects nearby people and vehicles, 
+            estimates their distance and motion, and visualizes a dynamic <strong>“safety bubble”</strong> 
+            that changes color based on proximity and speed.
+          </p>
+
+          <ul class="project-features">
+            <li>Integrates <strong>YOLOv8</strong> for object detection and Intel RealSense D455 depth data</li>
+            <li>Computes <em>Time-to-Collision (TTC)</em> and adapts bubble color dynamically</li>
+            <li>Three alert levels:
+              <ul>
+                <li>🟢 Safe: distance &gt; 3.0 m</li>
+                <li>🟠 Caution: ≤ 3.0 m</li>
+                <li>🔴 Danger: ≤ 1.5 m</li>
+              </ul>
+            </li>
+            <li>Real-time visualization and object tracking from synchronized RGB + depth feeds</li>
+            <li>Built for wearable assistive vision technology research</li>
+          </ul>
+
+          <p><strong>Created as:</strong> dotLumen Software Challenge 2 (Interview Assignment)</p>
+
+          <p>
+            <a href="https://github.com/Afhrodite/SafeBubble-Dynamic-Safe-Zone-Bubble-for-Wearable-RGB-Depth" target="_blank">GitHub Repository</a>
+          </p>
+
+          <img src="{{ url_for('static', filename='assets/images/safebubble1.png') }}" alt="SafeBubble Example Output">
+        </ul>
+      </div>
+
+      <div class="project-card">
         <h3>Concrete Strength Prediction (ML vs AI)</h3>
         <ul>
           <p><strong>Tech Stack:</strong> Python, TensorFlow, Keras, Scikit-learn, SQLite, Tkinter</p>
