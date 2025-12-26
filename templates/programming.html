@@ -7,6 +7,32 @@
   <div class="programming-container">
     <h1>Programming Projects</h1>
     <ul>
+      
+      <div class="project-card">
+        <h3>ASL Hand Tracking Translator</h3>
+        <ul>
+          <p><strong>Tech Stack:</strong> Python, TensorFlow, scikit-learn, OpenCV, MediaPipe, NumPy, HuggingFace Transformers</p>
+          <p>
+            An experimental pipeline that recognizes American Sign Language (ASL) hand signs from video. 
+            Uses MediaPipe for hand landmark tracking, custom datasets for static and movement-based letters, 
+            machine learning models for gesture classification, and optional NLP/LLM post-processing to convert letter sequences into text.
+          </p>
+
+          <ul class="project-features">
+            <li>Static letter recognition (A–I, K–Y) with high validation accuracy using MLP</li>
+            <li>Movement letter recognition (J, Z) using LSTM sequence models</li>
+            <li>Real-time and recorded video inference for ASL sequences</li>
+            <li>Experimental NLP/LLM layer for word reconstruction from predicted letters</li>
+            <li>Highlights challenges in real-world sentence reconstruction due to domain shift and limited dataset</li>
+          </ul>
+
+          <p><strong>Created as:</strong> Independent applied ML/CV/NLP project</p>
+
+          <p>
+            <a href="https://github.com/Afhrodite/ASL-Hand-Tracking-Translator" target="_blank">GitHub Repository</a>
+          </p>
+        </ul>
+      </div>
 
       <div class="project-card">
         <h3>SafeBubble — Dynamic Safe-Zone Bubble for Wearable RGB+Depth</h3>
